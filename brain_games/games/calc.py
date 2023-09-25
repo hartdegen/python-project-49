@@ -2,8 +2,8 @@ from random import randint, choice
 from brain_games.cli import start_game
 
 
-INFO_MESSAGE = 'What is the result of the expression?'
-operations = ('+', '-', '*')
+INFO_MESSAGE = "What is the result of the expression?"
+operations = ("+", "-", "*")
 
 
 def get_question_and_answer():
@@ -11,7 +11,7 @@ def get_question_and_answer():
     value2 = randint(1, 10)
     operation = choice(operations)
     question = f"Question: {value1} {operation} {value2}"
-    answer = ''
+    answer = ""
     match operation:
         case "+":
             answer = str(value1 + value2)

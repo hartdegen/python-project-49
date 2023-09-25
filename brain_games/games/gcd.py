@@ -2,7 +2,7 @@ from random import randint
 from brain_games.cli import start_game
 
 
-INFO_MESSAGE = 'Find the greatest common divisor of given numbers.'
+INFO_MESSAGE = "Find the greatest common divisor of given numbers."
 
 
 def find_greatest_common_divisor(num1, num2):

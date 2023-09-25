@@ -2,7 +2,7 @@ from random import randint
 from brain_games.cli import start_game
 
 
-INFO_MESSAGE = 'What number is missing in the progression?'
+INFO_MESSAGE = "What number is missing in the progression?"
 
 
 def calculate_arithmetic_progression(start_value, difference, length=10):
@@ -18,7 +18,7 @@ def get_question_and_answer():
     random_index = randint(0, 9)
     progression = calculate_arithmetic_progression(init, step)
     answer = str(progression.pop(random_index))
-    progression.insert(random_index, '..')
+    progression.insert(random_index, "..")
     question = "Question: " + " ".join((str(elem) for elem in progression))
     return (question, answer)
 
