@@ -1,9 +1,7 @@
-import prompt
-from brain_games.cli import welcome_user
 from random import randint
+from brain_games.cli import start_game
 
 
-MAX_ROUNDS = 3
 INFO_MESSAGE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
@@ -19,16 +17,4 @@ def get_question_and_answer():
 
 
 def start_game_brain_even():
-    username = welcome_user()
-    for _ in range(MAX_ROUNDS):
-        question, answer = get_question_and_answer()
-        print(INFO_MESSAGE)
-        print(question)
-        a = prompt.string("Your answer: ")
-        if a == answer:
-            print("Correct!")
-        else:
-            print(f"{a} is wrong answer ;(. Correct answer was {answer}")
-            print(f"Let's try again, {username}!")
-            return
-    print(f"Congratulations, {username}!")
+    return start_game(INFO_MESSAGE, get_question_and_answer)
