@@ -2,3 +2,6 @@
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/hartdegen/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/hartdegen/python-project-49/actions)
+
+### Install:
+[![asciicast](https://asciinema.org/a/uJfH0j57L64MGFkPohZplhIV2.svg)](https://asciinema.org/a/uJfH0j57L64MGFkPohZplhIV2)
