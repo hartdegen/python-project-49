@@ -15,8 +15,9 @@ def is_prime(num):
 
 
 def get_question_and_answer():
-    question = randint(0, 20)
-    answer = "yes" if is_prime(question) else "no"
+    random_number = randint(0, 20)
+    question = f"Question: {random_number}"
+    answer = "yes" if is_prime(random_number) else "no"
     return (question, answer)
 
 
