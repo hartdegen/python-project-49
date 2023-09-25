@@ -17,11 +17,11 @@ def start_game(info, get_question_and_answer):
         question, answer = get_question_and_answer()
         print(info)
         print(question)
-        response = prompt.string("Your answer: ")
-        if response == answer:
+        resp = prompt.string("Your answer: ")
+        if resp == answer:
             print("Correct!")
         else:
-            print(f"{response} is wrong answer ;(. Correct answer was {answer}")
+            print(f"'{resp}' is wrong answer ;(. Correct answer was '{answer}'")
             print(f"Let's try again, {username}!")
             return
     print(f"Congratulations, {username}!")
